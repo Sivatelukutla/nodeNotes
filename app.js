@@ -20,9 +20,9 @@ const crypto = require("crypto");
 
 //pbkdf2Sync => password base key dertive function synchronous
 //it is a sync
-
+//never every dont use sync code 
 crypto.pbkdf2Sync("password", "salt", 5000, 50, "sha512")
-    console.log("this is a sync code", keySync.toString("hex"));
+console.log("this is sync")
 
 
 
