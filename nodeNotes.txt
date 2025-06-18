@@ -1,0 +1,22 @@
+Note : 
+    in node js has a two main components (1) v8 javascript engine (2)libuv 
+Note : 
+    in node js have a super power examples=>core modules and loat of thinks 
+Note:
+    the node js code or javascript code are syncronouslly executes 
+Note:
+    the syncronouslly code is store in callstack and asyncronous code is store in libuv 
+Note:
+    functions like function decelration and function expression are stroed in callstack, in callstack have two segements are there 
+    (1)global execution context (2)execution context. the function are stored in executes context 
+    
+------------------------------event loop-----------------------------------------
+Note: 
+    =>=>in event loop have 4 major phases are there 
+    *timer => setTimeout,setInterval 
+    *poll  => i/o callbacks LIKE reding file, fs, http, get => all asyncronous code executes then its execution
+    *check => set immediatelly 
+    *close => socket . ("close")  
+NOTE: 
+    All phase are waiting in callback quee 
+    IF => callstack is empty that phases of code is pushed into callstack 
