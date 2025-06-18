@@ -17,6 +17,35 @@ Note:
     *poll  => i/o callbacks LIKE reding file, fs, http, get => all asyncronous code executes then its execution
     *check => set immediatelly 
     *close => socket . ("close")  
-NOTE: 
+Note: 
     All phase are waiting in callback quee 
     IF => callstack is empty that phases of code is pushed into callstack 
+
+Note:
+    before going to the every phase in the event loop. in event loop have a  *process.next Tick(), *promise callback checks the those two point 
+
+NOTE=>=>=>=>=>=>=>
+    this is exmaple of event loop phase 
+    const a = 100;
+
+    setImmediate(()=>{
+        console.log("siva")
+    })
+
+    process.nextTick(()=>{
+        console.log("process.nextTick()")
+    })
+
+    Promise.resolve(console.log("promise object"))
+
+    setTimeout(()=>{
+        console.log("setTimeout")
+    },1000)
+
+    function add(){
+        console.log(`function is ${a}`)
+    }
+
+    add()
+
+    console.log("console.log of this code")
