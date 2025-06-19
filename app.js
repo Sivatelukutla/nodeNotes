@@ -52,26 +52,36 @@
 
 // console.log("Hello World!");
 
-const a = 100;
+// const a = 100;
 
-setImmediate(()=>{
-    console.log("siva")
-})
+// setImmediate(()=>{
+//     console.log("siva")
+// })
 
-process.nextTick(()=>{
-    console.log("process.nextTick()")
-})
+// process.nextTick(()=>{
+//     console.log("process.nextTick()")
+// })
 
-Promise.resolve(console.log("promise object"))
+// Promise.resolve(console.log("promise object"))
 
-setTimeout(()=>{
-    console.log("setTimeout")
-},1000)
+// setTimeout(()=>{
+//     console.log("setTimeout")
+// },1000)
+
+// function add(){
+//     console.log(`function is ${a}`)
+// }
+
+// add()
+
+// console.log("console.log of this code")
+
+let a = 100;
 
 function add(){
-    console.log(`function is ${a}`)
+    console.log("a", a)
 }
 
 add()
 
-console.log("console.log of this code")
+console.log("last line")

@@ -49,3 +49,29 @@ NOTE=>=>=>=>=>=>=>
     add()
 
     console.log("console.log of this code")
+
+
+-----------------------------------*Create server*----------------------------------------
+
+server = A server is a computer or software that listens to requests from other 
+        computers (called clients) and sends back responses. 
+
+web    = for suppose we have unique ip address. we are connect together it is nothing but web 
+
+        NOTE:
+            cilent is request to the server with the help of socket 
+        NOTE:
+            server sending data packets(chunk).not sending full of data 
+IP     = internet protocal 
+
+NOTE : have different types of servers.like hardware,software,app 
+
+NOTE : we are requesting.that is http server which means application server 
+
+STREMS = is nothing but connection in simple 
+buffers = is nothing but the data is passed a chunks.....
+
+NOTE =>=>we are understand only url(http://namaste.dev.com) but server is understanding a IP address 
+        but before sending request it connect a DNS(domain name server) is nothing but connection between ip and url 
+socket => it is nothing but mutlipulle cilent are send request to the server with the socket connection. if get respond then time socket is stop....
+=========>by creating server using node js. in node js core module is their (http). in http have http.createServer(function(req,res){})
