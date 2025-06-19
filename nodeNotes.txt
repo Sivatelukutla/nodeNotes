@@ -75,3 +75,14 @@ NOTE =>=>we are understand only url(http://namaste.dev.com) but server is unders
         but before sending request it connect a DNS(domain name server) is nothing but connection between ip and url 
 socket => it is nothing but mutlipulle cilent are send request to the server with the socket connection. if get respond then time socket is stop....
 =========>by creating server using node js. in node js core module is their (http). in http have http.createServer(function(req,res){})
+
+
+--------------------------------------**Database sql&Nosql*-----------------------------------------------
+
+Database = batabase is an origanized store of data.
+DBMS(Database management system) = it is a software that is intreact with end user,application and database 
+                                    its self capture and analayize th data...... 
+
+--------------------------------------------**creating database & mongoDB**------------------------------------------- 
+NOTE : to ways to create mongoDB 
+(1)
