@@ -1,1 +1,1 @@
-mongodb+srv://sivaprasadtelukutla:<db_password>@namastenode.8bc92hd.mongodb.net/
+const url = "mongodb+srv://sivaprasad:siva1358@namastenode4.wh0gzdo.mongodb.net/"
